@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  /* background-color: black; */
+  /* color: white; */
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+}
+nav {
+  box-shadow: 0 0 4px #bbd0e2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 80px;
+  padding-inline: 6vw;
+}
+
+#navlogo {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  height: 50%;
+  width: 90%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+main {
+  margin: 120px 30px 0 30px;
+  border: 4px solid black;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+#container {
+  display: flex;
+  background-color: black;
+  color: whitesmoke;
+  width: 100%;
+}
+
+#songs {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#heading {
+  padding-left: 20px;
+}
+
+#songContainer {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.song {
+  padding: 10px 20px;
+  margin: 10px auto;
+  width: 70%;
+  border: 3px solid black;
+  border-radius: 200px;
+  display: flex;
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+.song img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.song p i {
+  padding-left: 5px;
+}
+
+#player {
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#playerControls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 18px;
+}
+
+.icons i {
+  cursor: pointer;
+  padding: 0 10px;
+  gap: 10px;
+  font-size: 40px;
+}
+
+.songInfo {
+  margin-top: 18px;
+  padding-right: 50px;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+#myProgressBar {
+  width: 40%;
+  cursor: pointer;
+}
+.songPlayButton {
+  cursor: pointer;
+}
